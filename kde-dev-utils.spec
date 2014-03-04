@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	4.12.2
+Version:	4.12.3
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -13,7 +13,7 @@ Url:		http://www.kde.org
 %define ftpdir stable
 %endif
 Source0:	ftp://ftp.kde.org/pub/kde/%{ftpdir}/%{version}/src/%{name}-%{version}.tar.xz
-Source1:	kde-dev-utils.rpmlintrc
+Source10:	kde-dev-utils.rpmlintrc
 BuildRequires:	binutils-devel
 BuildRequires:	libtool-devel
 BuildRequires:	kdelibs4-devel
@@ -161,6 +161,10 @@ based on kmtrace libraries.
 %makeinstall_std -C build
 
 %changelog
+* Tue Mar 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-1
+- New version 4.12.3
+- Add rpmlint filter
+
 * Tue Feb 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.2-1
 - New version 4.12.2
 
