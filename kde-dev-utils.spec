@@ -1,7 +1,7 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	4.14.3
-Release:	2
+Version:	14.12.3
+Release:	1
 Epoch:		1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -12,7 +12,7 @@ Url:		http://www.kde.org
 %else
 %define ftpdir stable
 %endif
-Source0:	ftp://ftp.kde.org/pub/kde/%{ftpdir}/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Source10:	kde-dev-utils.rpmlintrc
 BuildRequires:	binutils-devel
 BuildRequires:	libtool-devel
