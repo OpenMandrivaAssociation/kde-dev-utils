@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -16,7 +16,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/%{ftpdir}/applications/%{version}/src/%{name}
 Source10:	kde-dev-utils.rpmlintrc
 BuildRequires:	binutils-devel
 BuildRequires:	libtool-devel
-BuildRequires:	kdelibs4-devel
+BuildRequires:	kdelibs4-devel >= 5:4.14.8
 Suggests:	kmtrace = %{EVRD}
 Suggests:	kpartloader = %{EVRD}
 Suggests:	kprofilemethod = %{EVRD}
