@@ -1,3 +1,5 @@
-sources:
+removed_sources:
   kde-dev-utils-15.04.3.tar.xz: ff3a71034112984e1dd53b7b6fb6073c9a9d7983
   kde-dev-utils-15.08.0.tar.xz: cfa6da964d3b85041158a9d9a6d166f298f13265
+sources:
+  kde-dev-utils-15.08.1.tar.xz: 2c338772eefba9851674a95d0e94d6845a3755a7
