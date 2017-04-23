@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -47,7 +47,7 @@ Conflicts:	kdesdk4-core < 1:4.11.0
 %description -n kpartloader
 Test application for KParts.
 
-%files -n kpartloader
+%files -n kpartloader -f kpartloader.lang
 %{_bindir}/kpartloader
 %{_datadir}/kxmlgui5/kpartloader
 
@@ -60,7 +60,7 @@ Group:		Graphical desktop/KDE
 %description -n kuiviewer
 Displays Qt Designer UI files.
 
-%files -n kuiviewer
+%files -n kuiviewer -f kuiviewer.lang
 %{_bindir}/kuiviewer
 %{_libdir}/qt5/plugins/quithumbnail.so
 %{_libdir}/qt5/plugins/kuiviewerpart.so
@@ -82,3 +82,5 @@ Displays Qt Designer UI files.
 
 %install
 %ninja_install -C build
+%find_lang kpartloader
+%find_lang kuiviewer
