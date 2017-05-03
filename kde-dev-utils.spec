@@ -18,6 +18,7 @@ BuildRequires:	cmake(KF5Parts)
 BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5JobWidgets)
 BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(Qt5Designer)
 Suggests:	kpartloader = %{EVRD}
 Suggests:	kuiviewer = %{EVRD}
 # Not being ported to KF5
@@ -75,10 +76,10 @@ Displays Qt Designer UI files.
 
 %prep
 %setup -q
+%cmake_kde5
 
 %build
-%cmake_kde5
-%ninja
+%ninja -C buld
 
 %install
 %ninja_install -C build
