@@ -79,7 +79,7 @@ Displays Qt Designer UI files.
 %cmake_kde5
 
 %build
-%ninja -C buld
+%ninja -C build
 
 %install
 %ninja_install -C build
