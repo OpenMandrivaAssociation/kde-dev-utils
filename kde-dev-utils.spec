@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	17.07.90
+Version:	17.08.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
