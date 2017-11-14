@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	17.08.0
+Version:	17.08.3
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -68,7 +68,7 @@ Displays Qt Designer UI files.
 %{_datadir}/applications/org.kde.kuiviewer.desktop
 %{_datadir}/kxmlgui5/kuiviewer
 %{_datadir}/kxmlgui5/kuiviewerpart
-%{_datadir}/icons/hicolor/*/apps/kuiviewer.png
+%{_datadir}/icons/hicolor/*/apps/kuiviewer.*
 %{_datadir}/kservices5/kuiviewer_part.desktop
 %{_datadir}/kservices5/designerthumbnail.desktop
 
