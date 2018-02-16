@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kde-dev-utils-17.12.1.tar.xz: de7e17c8dca38b6fb7eed1ac49eae551946b8b4d
+sources:
+  kde-dev-utils-17.12.2.tar.xz: 5c4af0ee481af6717e8040c1db9f0bac91d2dba4
