@@ -1,7 +1,7 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	 18.12.3
-Release:	2
+Version:	 19.04.0
+Release:	1
 Epoch:		1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -50,7 +50,6 @@ Test application for KParts.
 
 %files -n kpartloader -f kpartloader.lang
 %{_bindir}/kpartloader
-%{_datadir}/kxmlgui5/kpartloader
 
 #----------------------------------------------------------------------------
 
@@ -64,10 +63,8 @@ Displays Qt Designer UI files.
 %files -n kuiviewer -f kuiviewer.lang
 %{_bindir}/kuiviewer
 %{_libdir}/qt5/plugins/quithumbnail.so
-%{_libdir}/qt5/plugins/kuiviewerpart.so
+%{_libdir}/qt5/plugins/kf5/parts/kuiviewerpart.so
 %{_datadir}/applications/org.kde.kuiviewer.desktop
-%{_datadir}/kxmlgui5/kuiviewer
-%{_datadir}/kxmlgui5/kuiviewerpart
 %{_datadir}/icons/hicolor/*/apps/kuiviewer.*
 %{_datadir}/kservices5/kuiviewer_part.desktop
 %{_datadir}/kservices5/designerthumbnail.desktop

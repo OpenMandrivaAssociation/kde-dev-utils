@@ -1,4 +1,2 @@
-removed_sources:
-  kde-dev-utils-17.12.1.tar.xz: de7e17c8dca38b6fb7eed1ac49eae551946b8b4d
 sources:
-  kde-dev-utils-18.12.3.tar.xz: 14fc807efac1828cfa2f96402c9a3b5e4a545276
+  kde-dev-utils-19.04.0.tar.xz: 687689858e6c0fa45c156b4a970670fd60cbf9a6
