@@ -1,13 +1,13 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Source10:	kde-dev-utils.rpmlintrc
 BuildRequires:	binutils-devel
 BuildRequires:	libtool-devel
