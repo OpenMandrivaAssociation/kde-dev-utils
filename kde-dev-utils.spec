@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	20.07.80
+Version:	20.07.90
 Release:	1
 Epoch:		1
 License:	GPLv2+
