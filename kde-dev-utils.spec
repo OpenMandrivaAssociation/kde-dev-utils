@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	21.08.0
+Version:	21.08.1
 Release:	1
 Epoch:		1
 License:	GPLv2+
