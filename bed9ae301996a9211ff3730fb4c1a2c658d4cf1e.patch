@@ -1,0 +1,26 @@
+From bed9ae301996a9211ff3730fb4c1a2c658d4cf1e Mon Sep 17 00:00:00 2001
+From: Joshua Goins <josh@redstrate.com>
+Date: Thu, 11 Jan 2024 21:03:50 +0000
+Subject: [PATCH] Remove character that wasn't supposed to be in the install
+ command
+
+---
+ kuiviewer/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/kuiviewer/CMakeLists.txt b/kuiviewer/CMakeLists.txt
+index dc32817..370a0f8 100644
+--- a/kuiviewer/CMakeLists.txt
++++ b/kuiviewer/CMakeLists.txt
+@@ -64,7 +64,7 @@ target_link_libraries(kuiviewerpart
+     Qt6::UiTools
+ )
+ 
+-install(TARGETS kuiviewerpart  DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf6}/parts )
++install(TARGETS kuiviewerpart  DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf6/parts )
+ install(FILES org.kde.kuiviewerpart.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+ 
+ kcoreaddons_add_plugin(quithumbnail INSTALL_NAMESPACE "kf6/thumbcreator")
+-- 
+GitLab
+
