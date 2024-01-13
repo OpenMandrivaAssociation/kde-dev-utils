@@ -11,7 +11,7 @@ Source0:	https://invent.kde.org/sdk/kde-dev-utils/-/archive/master/kde-dev-utils
 %else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kde-dev-utils-%{version}.tar.xz
 %endif
-Source10:	kde-dev-utils.rpmlintrc
+#Source10:	kde-dev-utils.rpmlintrc
 Patch0:		https://invent.kde.org/sdk/kde-dev-utils/-/commit/bed9ae301996a9211ff3730fb4c1a2c658d4cf1e.patch
 BuildRequires:	binutils-devel
 BuildRequires:	libtool-devel
