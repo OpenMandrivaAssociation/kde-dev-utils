@@ -23,6 +23,9 @@ BuildRequires:	cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(KF6JobWidgets)
 BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(Qt6Designer)
+BuildRequires:	cmake(Qt6UiTools)
+BuildRequires:  qt6-qtbase-theme-gtk3
+BuildRequires:	qt6-qttools-designer
 Suggests:	kpartloader = %{EVRD}
 Suggests:	kuiviewer = %{EVRD}
 # Not being ported to KF6
