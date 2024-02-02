@@ -1,6 +1,6 @@
 Summary:	Utilities for KDE application development
 Name:		plasma6-kde-dev-utils
-Version:	24.01.90
+Version:	24.01.95
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -12,7 +12,6 @@ Source0:	https://invent.kde.org/sdk/kde-dev-utils/-/archive/master/kde-dev-utils
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kde-dev-utils-%{version}.tar.xz
 %endif
 #Source10:	kde-dev-utils.rpmlintrc
-Patch0:		https://invent.kde.org/sdk/kde-dev-utils/-/commit/bed9ae301996a9211ff3730fb4c1a2c658d4cf1e.patch
 BuildRequires:	binutils-devel
 BuildRequires:	libtool-devel
 BuildRequires:	cmake(ECM)
