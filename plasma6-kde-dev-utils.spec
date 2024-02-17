@@ -1,15 +1,26 @@
+%define git 20240218
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Utilities for KDE application development
 Name:		plasma6-kde-dev-utils
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/sdk/kde-dev-utils/-/archive/%{gitbranch}/kde-dev-utils-%{gitbranchd}.tar.bz2#/kde-dev-utils-%{git}.tar.bz2
+%else
 Source0:	https://invent.kde.org/sdk/kde-dev-utils/-/archive/master/kde-dev-utils-master.tar.bz2
+%endif
+%else
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/sdk/kde-dev-utils/-/archive/%{gitbranch}/kde-dev-utils-%{gitbranchd}.tar.bz2#/kde-dev-utils-%{git}.tar.bz2
 %else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kde-dev-utils-%{version}.tar.xz
+%endif
 %endif
 #Source10:	kde-dev-utils.rpmlintrc
 BuildRequires:	binutils-devel
@@ -80,7 +91,7 @@ Displays Qt Designer UI files.
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n kde-dev-utils-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n kde-dev-utils-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
