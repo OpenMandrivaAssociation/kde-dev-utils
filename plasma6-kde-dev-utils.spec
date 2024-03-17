@@ -34,6 +34,7 @@ BuildRequires:	cmake(KF6JobWidgets)
 BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(Qt6Designer)
 BuildRequires:	cmake(Qt6UiTools)
+BuildRequires:	cmake(Qt6OpenGL)
 BuildRequires:	cmake(Qt6OpenGLWidgets)
 BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	qt6-qttools-designer
