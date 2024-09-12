@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Utilities for KDE application development
 Name:		plasma6-kde-dev-utils
-Version:	24.08.0
+Version:	24.08.1
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
