@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Utilities for KDE application development
 Name:		kde-dev-utils
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -46,6 +46,11 @@ Obsoletes:	kstartperf < %{EVRD}
 Obsoletes:	kmtrace < %{EVRD}
 Obsoletes:	%mklibname ktrace 4
 Obsoletes:	%mklibname ktrace -d
+
+%rename plasma6-kde-dev-utils
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 Utilities for KDE application development:
@@ -90,18 +95,6 @@ Displays Qt Designer UI files.
 %{_datadir}/metainfo/org.kde.kuiviewer.metainfo.xml
 %{_datadir}/metainfo/org.kde.kuiviewerpart.metainfo.xml
 
-#----------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kde-dev-utils-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
+%install -a
 %find_lang kpartloader
 %find_lang kuiviewer
